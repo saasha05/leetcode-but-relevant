@@ -1,8 +1,8 @@
+
 # Week 01 — Arrays & Complexity at Scale
 
 **🎯 Objective**  
 Build a precise mental model of contiguous storage, indexing cost, and iteration so you can spot performance issues in real Java services.
-
 ---
 
 ## 📘 Study Material
@@ -49,6 +49,37 @@ Identify one production path (batch job, ETL, JSON mapping, report generation) t
 - [ ] ~150-word reflection: *"Hidden complexity in one real system I've seen."*
 
 ---
+
+## 🧱 Additional Practice
+
+Sharpen your array and complexity skills further with these curated problems:
+
+### Easy
+
+- [Contains Duplicate](https://neetcode.io/problems/contains-duplicate)  
+  Check if any value appears at least twice in the array (tests hash set usage for O(n) lookup).
+- [Maximum Subarray](https://neetcode.io/problems/maximum-subarray)  
+  Find the contiguous subarray with the largest sum (tests understanding of prefix sums/Kadane’s algorithm).
+- [Valid Anagram](https://neetcode.io/problems/valid-anagram)  
+  Determine if two strings are anagrams (tests frequency counting and array/hash map use).
+
+### Medium
+
+- [Product of Array Except Self](https://neetcode.io/problems/product-of-array-except-self)  
+  Return an array where each element is the product of all other elements (tests prefix/suffix products and O(1) space tricks).
+- [Longest Substring Without Repeating Characters](https://neetcode.io/problems/longest-substring-without-repeating-characters)  
+  Find the length of the longest substring without repeating characters (tests sliding window and set/hash map).
+- [3Sum](https://neetcode.io/problems/3sum)  
+  Find all unique triplets that sum to zero (tests sorting, two pointers, and deduplication).
+
+### Hard
+
+- [First Missing Positive](https://neetcode.io/problems/first-missing-positive)  
+  Find the smallest missing positive integer (tests in-place array manipulation and O(n) time).
+- [Trapping Rain Water](https://neetcode.io/problems/trapping-rain-water)  
+  Compute how much water can be trapped after raining (tests two-pointer and prefix/suffix max strategies).
+- [Merge Intervals](https://neetcode.io/problems/merge-intervals)  
+  Merge all overlapping intervals (tests sorting and in-place merging logic).
 
 <details>
 <summary><strong>💡 Problem-Solving Hints</strong></summary>
