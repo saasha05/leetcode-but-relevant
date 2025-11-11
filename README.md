@@ -1,6 +1,6 @@
 # LeetCode But Relevant
 
-> A 42-week curriculum that connects algorithmic thinking to real-world engineering for senior and lead engineers.
+> A 42-week curriculum that connects algorithmic thinking to real-world engineering for senior and lead software engineers.
 
 ---
 
