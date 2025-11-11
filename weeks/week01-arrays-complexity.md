@@ -1,8 +1,7 @@
-
 # Week 01 — Arrays & Complexity at Scale
 
 **🎯 Objective**  
-[Inference] Build a precise mental model of contiguous storage, indexing cost, and iteration so you can spot performance issues in real Java services.
+Build a precise mental model of contiguous storage, indexing cost, and iteration so you can spot performance issues in real Java services.
 
 ---
 
@@ -29,7 +28,7 @@
 
 ## 💡 Why It Matters (Senior Lens)
 
-[Inference] You review PRs and designs. Recognizing O(n²) loops or accidental copies across millions of entries is part of your job, not an interview trick.
+You review PRs and designs. Recognizing O(n²) loops or accidental copies across millions of entries is part of your job, not an interview trick.
 
 ---
 
@@ -90,7 +89,7 @@ Identify one production path (batch job, ETL, JSON mapping, report generation) t
 
 ## ✅ Done When
 
-- [Inference] You can annotate any nested loop with time/space complexity in realistic units (input size → cost).
+- You can annotate any nested loop with time/space complexity in realistic units (input size → cost).
 - You can explain when a plain array is appropriate over `ArrayList` in a hot code path.
 
 🏁 **25 pts**

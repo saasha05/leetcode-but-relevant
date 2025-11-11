@@ -1,8 +1,7 @@
-
 # Week XX — Title
 
 **🎯 Objective**  
-[Inference] One tight sentence on what this week trains in your engineering judgment.
+One tight sentence on what this week trains in your engineering judgment.
 
 ---
 
@@ -29,7 +28,7 @@
 
 ## 💡 Why It Matters (Senior Lens)
 
-[Inference] Connect the pattern directly to backend/infra/AI systems: performance, correctness, tradeoffs, ownership.
+Connect the pattern directly to backend/infra/AI systems: performance, correctness, tradeoffs, ownership.
 
 ---
 
@@ -86,6 +85,6 @@ Prompt(s) that force you to map this concept to:
 
 ## ✅ Done When
 
-- [Inference] Behavioral checklist: how you think / what you can explain by end of week.
+- Behavioral checklist: how you think / what you can explain by end of week.
 
 🏁 **NN pts**

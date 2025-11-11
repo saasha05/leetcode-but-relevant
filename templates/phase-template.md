@@ -50,8 +50,8 @@ After completing this phase, you should be able to:
 
 ## 🏁 Phase Completion Criteria
 
-- [Inference] Behavioral indicators: how you think / what you can explain by end of phase.
-- [Inference] What interview questions you should be able to handle confidently.
+- Describe what a senior engineer should be able to explain or reason about by the end of this phase.
+- List the types of interview or design questions this phase prepares them to handle.
 
 ---
 
