@@ -27,6 +27,8 @@ Understand how `HashMap` works internally (buckets, load factor, collisions, tre
   Video walkthrough: https://www.youtube.com/watch?v=vzdNOK2oB2E
 - **Top K Frequent Elements — NeetCode YouTube**  
   Video walkthrough: https://www.youtube.com/watch?v=YPTqKIgVk-k
+- **Encode and Decode Strings — NeetCode YouTube**  
+  Video walkthrough: https://www.youtube.com/watch?v=B1k_sx-osg0
 
 </details>
 
@@ -47,14 +49,14 @@ List three hot code paths (API gateway, auth, recsys, billing) where a map is or
 ## 🧩 Deliverables
 
 - [ ] **Valid Anagram**  
-      NeetCode: https://neetcode.io/problems/valid-anagram  
-      LeetCode: https://leetcode.com/problems/valid-anagram/  
+      NeetCode: https://neetcode.io/problems/is-anagram/question?list=neetcode150  
 - [ ] **Group Anagrams**  
-      NeetCode: https://neetcode.io/problems/group-anagrams  
-      LeetCode: https://leetcode.com/problems/group-anagrams/  
+      NeetCode: https://neetcode.io/problems/anagram-groups/question?list=neetcode150
 - [ ] **Top K Frequent Elements**  
-      NeetCode: https://neetcode.io/problems/top-k-frequent-elements  
-      LeetCode: https://leetcode.com/problems/top-k-frequent-elements/  
+      NeetCode: https://neetcode.io/problems/top-k-elements-in-list/question?list=neetcode150 
+- [ ] **Encode and Decode Strings**  
+      NeetCode: https://neetcode.io/problems/encode-and-decode-strings  
+      LeetCode: https://leetcode.com/problems/encode-and-decode-strings/  
 - [ ] ~150-word note: *"When 'O(1)' hashmap access degrades and how I'd detect it."*
 
 ---
@@ -98,6 +100,11 @@ List three hot code paths (API gateway, auth, recsys, billing) where a map is or
 - Hint 1: First, count frequencies using HashMap. Then you need the K most frequent. What data structure helps you get the top K efficiently?
 - Hint 2: After counting frequencies, you could sort by frequency (O(n log n)), but can you do better? Think about heap/priority queue.
 - Hint 3: Use HashMap to count, then use a min-heap of size K to keep track of top K. Or use bucket sort if frequencies are bounded.
+
+**Encode and Decode Strings:**
+- Hint 1: You need to encode multiple strings into one string and decode it back. How can you handle strings of different lengths?
+- Hint 2: Use a delimiter, but what if the delimiter appears in the strings? Use length prefix: encode as "length#string" for each string.
+- Hint 3: When encoding, prepend each string with its length and a delimiter (e.g., "5#hello3#abc"). When decoding, read length, then read that many characters.
 
 </details>
 

@@ -34,7 +34,7 @@ Design everything for someone who:
 Key principle:
 **Every week must feel like it respects their time and brain.**
 
-No hand-holding tutorials. No walls of code. No vibe of "for beginners."
+No hand-holding tutorials. No walls of code. No vibe of "for beginners." 
 
 ---
 
@@ -174,10 +174,16 @@ When modifying or adding a week:
      - A small number of high-signal resources (system design primer, etc.)
    - No SEO-churn blogs. No filler.
 3. **Reflections are non-optional.**
-   - They are not fluff; they force transfer from "toy problem" → "production reasoning."
-4. **No tutorial walls.**
-   - Do not paste long code.
-   - Reference patterns; keep code conceptual.
+   - They are not fluff; they force transfer from "toy problem" → "production reasoning.
+
+4. **Notes about patterns and common algorithms**
+  - Each week has notes to reference for the topic to catch up or revise the topic
+  - The notes should have the following
+    - Questions to Think About
+    - How to Identify a Prefix Sum Problem
+    - Pitfalls to Avoid
+    - Algorithm examples
+  - There should be a focus on where each pattern is applied in the real world
 5. **Voice & stance:**
    - Talking to a peer, not a student.
    - Assume context, but never assume memorization.

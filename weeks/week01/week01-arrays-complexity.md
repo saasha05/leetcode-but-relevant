@@ -19,8 +19,6 @@ Build a precise mental model of contiguous storage, indexing cost, and iteration
 
 - **Two Sum — NeetCode YouTube**  
   Video walkthrough: https://www.youtube.com/watch?v=KLlXCFG5TnA
-- **Best Time to Buy and Sell Stock — NeetCode YouTube**  
-  Video walkthrough: https://www.youtube.com/watch?v=1pkOgXD63yU
 
 </details>
 
@@ -43,9 +41,6 @@ Identify one production path (batch job, ETL, JSON mapping, report generation) t
 - [ ] **Two Sum**  
       NeetCode: https://neetcode.io/problems/two-integer-sum  
       LeetCode: https://leetcode.com/problems/two-sum/  
-- [ ] **Best Time to Buy and Sell Stock**  
-      NeetCode: https://neetcode.io/problems/best-time-to-buy-and-sell-stock  
-      LeetCode: https://leetcode.com/problems/best-time-to-buy-and-sell-stock/  
 - [ ] ~150-word reflection: *"Hidden complexity in one real system I've seen."*
 
 ---
@@ -56,20 +51,20 @@ Sharpen your array and complexity skills further with these curated problems:
 
 ### Easy
 
-- [Contains Duplicate](https://neetcode.io/problems/contains-duplicate)  
-  Check if any value appears at least twice in the array (tests hash set usage for O(n) lookup).
 - [Maximum Subarray](https://neetcode.io/problems/maximum-subarray)  
-  Find the contiguous subarray with the largest sum (tests understanding of prefix sums/Kadane’s algorithm).
-- [Valid Anagram](https://neetcode.io/problems/valid-anagram)  
+  Find the contiguous subarray with the largest sum (tests understanding of prefix sums/Kadane's algorithm).
+- [Valid Anagram](https://neetcode.io/problems/is-anagram)  
   Determine if two strings are anagrams (tests frequency counting and array/hash map use).
+- [Best Time to Buy and Sell Stock](https://neetcode.io/problems/best-time-to-buy-and-sell-stock)  
+  Find maximum profit from one transaction (tests single-pass array traversal and min tracking).
 
 ### Medium
 
-- [Product of Array Except Self](https://neetcode.io/problems/product-of-array-except-self)  
+- [Product of Array Except Self](https://neetcode.io/problems/products-of-array-discluding-self)  
   Return an array where each element is the product of all other elements (tests prefix/suffix products and O(1) space tricks).
-- [Longest Substring Without Repeating Characters](https://neetcode.io/problems/longest-substring-without-repeating-characters)  
+- [Longest Substring Without Repeating Characters](https://neetcode.io/problems/longest-substring-without-duplicates)  
   Find the length of the longest substring without repeating characters (tests sliding window and set/hash map).
-- [3Sum](https://neetcode.io/problems/3sum)  
+- [3Sum](https://neetcode.io/problems/three-integer-sum)  
   Find all unique triplets that sum to zero (tests sorting, two pointers, and deduplication).
 
 ### Hard
@@ -108,11 +103,6 @@ Sharpen your array and complexity skills further with these curated problems:
 - Hint 1: You need to find two numbers that sum to target. As you iterate, what have you already seen that you might need later?
 - Hint 2: If you've seen `nums[i]`, what value would you need to find to complete the pair? Can you store what you've seen for O(1) lookup?
 - Hint 3: Store each number and its index as you iterate. For each new number, check if `target - current_number` exists in your stored values.
-
-**Best Time to Buy and Sell Stock:**
-- Hint 1: You can only make one transaction. What's the minimum price you've seen so far, and what's the maximum profit you could make selling today?
-- Hint 2: Track the minimum price encountered so far. For each day, calculate profit if you sold today (price - min_so_far) and keep the maximum.
-- Hint 3: This is a single-pass problem. You don't need to look ahead or behind—just track the best buying opportunity (minimum) and best selling opportunity (current price - minimum).
 
 </details>
 

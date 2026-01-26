@@ -23,8 +23,10 @@ Use set semantics to enforce uniqueness, membership, and idempotent behavior.
 
 - **Contains Duplicate — NeetCode YouTube**  
   Video walkthrough: https://www.youtube.com/watch?v=3OamzN90kPg
-- **Happy Number — NeetCode YouTube**  
-  Video walkthrough: https://www.youtube.com/watch?v=ljz85bxOYJ0
+- **Valid Anagram — NeetCode YouTube**  
+  Video walkthrough: https://www.youtube.com/watch?v=9UtInBqnCgA
+- **Valid Sudoku — NeetCode YouTube**  
+  Video walkthrough: https://www.youtube.com/watch?v=TjFXEUCMqI8
 - **Longest Consecutive Sequence — NeetCode YouTube**  
   Video walkthrough: https://www.youtube.com/watch?v=P6RZZMu_maU
 
@@ -49,12 +51,36 @@ Identify a workflow that must be idempotent (e.g., charge, email, migration). Ho
 - [ ] **Contains Duplicate**  
       NeetCode: https://neetcode.io/problems/duplicate-integer  
       LeetCode: https://leetcode.com/problems/contains-duplicate/  
-- [ ] **Happy Number**  
-      LeetCode: https://leetcode.com/problems/happy-number/  
+- [ ] **Valid Anagram**  
+      NeetCode: https://neetcode.io/problems/is-anagram  
+      LeetCode: https://leetcode.com/problems/valid-anagram/  
+- [ ] **Valid Sudoku**  
+      NeetCode: https://neetcode.io/problems/valid-sudoku  
+      LeetCode: https://leetcode.com/problems/valid-sudoku/  
 - [ ] **Longest Consecutive Sequence**  
       NeetCode: https://neetcode.io/problems/longest-consecutive-sequence  
       LeetCode: https://leetcode.com/problems/longest-consecutive-sequence/  
 - [ ] Short reflection: "An idempotency strategy I trust or don't trust and why."
+
+---
+
+## 🧱 Additional Practice
+
+Sharpen your HashSet and uniqueness skills further with these curated problems:
+
+### Easy
+
+- [Happy Number](https://leetcode.com/problems/happy-number/)  
+  Determine if a number is happy (tests cycle detection with HashSet).
+- [Contains Duplicate II](https://leetcode.com/problems/contains-duplicate-ii/)  
+  Check if array contains duplicate within k distance (tests sliding window + HashSet).
+
+### Medium
+
+- [Set Matrix Zeroes](https://neetcode.io/problems/set-matrix-zeroes)  
+  Set entire row and column to zero if element is zero (tests in-place manipulation with sets).
+- [Jewels and Stones](https://leetcode.com/problems/jewels-and-stones/)  
+  Count how many stones are jewels (tests HashSet membership checks).
 
 ---
 
@@ -92,6 +118,16 @@ Identify a workflow that must be idempotent (e.g., charge, email, migration). Ho
 - Hint 1: A number is happy if repeatedly summing squares of digits eventually reaches 1. What if it never reaches 1?
 - Hint 2: If you see the same number twice during the process, you're in a cycle (not happy). Use HashSet to detect cycles.
 - Hint 3: Keep computing sum of squares of digits. If result is 1, return true. If result is in your HashSet, return false (cycle detected). Otherwise, add to HashSet and continue.
+
+**Valid Anagram:**
+- Hint 1: Two strings are anagrams if they have the same character frequencies. How can you check this efficiently with sets?
+- Hint 2: You could use two HashSets and compare, or use one HashSet to track characters from first string and remove from second.
+- Hint 3: Or use HashMap for frequency counting, but with HashSet: add all chars from first string, then check if all chars from second string exist and remove them. If set is empty at end, they're anagrams.
+
+**Valid Sudoku:**
+- Hint 1: A valid Sudoku has no duplicates in rows, columns, or 3x3 boxes. How can you check for duplicates efficiently?
+- Hint 2: Use HashSet to track seen numbers. For each cell, check if the number already exists in the current row, column, or box.
+- Hint 3: Create sets for each row, column, and box. Box index = (row/3)*3 + (col/3). If a number is already in any of these sets, the Sudoku is invalid.
 
 **Longest Consecutive Sequence:**
 - Hint 1: You need the longest consecutive sequence. A sequence starts when `num-1` doesn't exist. How can you check this efficiently?
