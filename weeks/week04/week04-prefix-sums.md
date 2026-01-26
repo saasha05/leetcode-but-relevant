@@ -1,4 +1,3 @@
-
 # Week 04 — Prefix Sums & Subarrays
 
 **🎯 Objective**  
@@ -96,3 +95,27 @@ Choose one metric (e.g., daily active users, requests, spend). Describe a prefix
 - [Inference] You instinctively ask: “Can we amortize this with a prefix or diff array?”
 
 🏁 **25 pts**
+
+## Questions to Think About (Prefix Sums)
+
+- What range queries am I answering repeatedly?
+- Can I precompute something to avoid rescanning?
+- What does prefix[i] represent exactly?
+- How do I derive a range result from two prefix values?
+- Do negative numbers affect the correctness of my approach?
+
+## How to Identify a Prefix Sum Problem
+
+- The problem asks for sums or counts over subarrays or ranges
+- You are computing overlapping ranges repeatedly
+- A brute-force solution would recompute the same sums
+- Constraints suggest multiple queries or repeated aggregation
+- The input is static while queries vary
+
+## Pitfalls to Avoid
+
+- Off-by-one errors in prefix indexing
+- Forgetting to initialize the base prefix value
+- Confusing prefix sum with a running sum
+- Recomputing range sums instead of using differences
+- Assuming all values are non-negative when they are not
