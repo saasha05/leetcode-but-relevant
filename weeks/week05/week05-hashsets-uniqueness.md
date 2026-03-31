@@ -49,16 +49,16 @@ Identify a workflow that must be idempotent (e.g., charge, email, migration). Ho
 ## 🧩 Deliverables
 
 - [ ] **Contains Duplicate**  
-      NeetCode: https://neetcode.io/problems/duplicate-integer  
+      NeetCode: https://neetcode.io/problems/duplicate-integer/question?list=neetcode150
       LeetCode: https://leetcode.com/problems/contains-duplicate/  
 - [ ] **Valid Anagram**  
-      NeetCode: https://neetcode.io/problems/is-anagram  
+      NeetCode: https://neetcode.io/problems/is-anagram/question?list=neetcode150 
       LeetCode: https://leetcode.com/problems/valid-anagram/  
 - [ ] **Valid Sudoku**  
-      NeetCode: https://neetcode.io/problems/valid-sudoku  
+      NeetCode: https://neetcode.io/problems/valid-sudoku/question?list=neetcode150  
       LeetCode: https://leetcode.com/problems/valid-sudoku/  
 - [ ] **Longest Consecutive Sequence**  
-      NeetCode: https://neetcode.io/problems/longest-consecutive-sequence  
+      NeetCode: https://neetcode.io/problems/longest-consecutive-sequence/question?list=neetcode150
       LeetCode: https://leetcode.com/problems/longest-consecutive-sequence/  
 - [ ] Short reflection: "An idempotency strategy I trust or don't trust and why."
 
@@ -70,14 +70,14 @@ Sharpen your HashSet and uniqueness skills further with these curated problems:
 
 ### Easy
 
-- [Happy Number](https://leetcode.com/problems/happy-number/)  
+- [Happy Number](https://neetcode.io/problems/non-cyclical-number/question?list=neetcode150)  
   Determine if a number is happy (tests cycle detection with HashSet).
-- [Contains Duplicate II](https://leetcode.com/problems/contains-duplicate-ii/)  
+- [Contains Duplicate II](https://neetcode.io/solutions/contains-duplicate-ii)  
   Check if array contains duplicate within k distance (tests sliding window + HashSet).
 
 ### Medium
 
-- [Set Matrix Zeroes](https://neetcode.io/problems/set-matrix-zeroes)  
+- [Set Matrix Zeroes](https://neetcode.io/problems/set-zeroes-in-matrix)  
   Set entire row and column to zero if element is zero (tests in-place manipulation with sets).
 - [Jewels and Stones](https://leetcode.com/problems/jewels-and-stones/)  
   Count how many stones are jewels (tests HashSet membership checks).

@@ -35,10 +35,53 @@ Pick one system or service you know well. For each hot path, document:
 
 ## 🧩 Deliverables
 
-- [ ] Re-implement **Two Sum** and **Group Anagrams** from memory (no notes).  
+- [X] Re-implement **Two Sum** and **Group Anagrams** from memory (no notes).  
 - [ ] 1–2 page write-up: *"Data layout and lookup patterns in <system>, and what I'd change now."*
-
 ---
+
+## 🧱 Additional Practice
+
+Additional NeetCode 150 problems reinforcing concepts from Weeks 1-6 (Arrays, HashMaps, HashSets, Sliding Window, Prefix Sums):
+
+### Easy
+
+- [ ] [Two Sum II - Input Array Is Sorted](https://neetcode.io/problems/two-sum-ii-input-array-is-sorted)  
+  Two pointers on sorted array (builds on Two Sum with sorted input optimization).
+- [x] [Ransom Note](https://neetcode.io/problems/ransom-note/question?list=allNC)
+  Character frequency counting with HashMap (similar to Valid Anagram with frequency constraints).
+- [x] [First Unique Character in a String](https://neetcode.io/problems/first-unique-character-in-a-string/question?list=allNC)
+  HashMap for character frequency tracking and iteration order.
+- [ ] [Maximum Average Subarray I](https://leetcode.com/problems/maximum-average-subarray-i/)
+  Fixed-size sliding window pattern.
+- [ ] [Range Sum Query - Immutable](https://leetcode.com/problems/range-sum-query-immutable/)
+  Classic prefix sum problem for range queries.
+- [ ] [Intersection of Two Arrays](https://neetcode.io/problems/intersection-of-two-arrays?list=allNC)
+  HashSet set intersection operations.
+- [ ] [Intersection of Two Arrays II](https://leetcode.com/problems/intersection-of-two-arrays-ii/)
+  HashMap frequency counting (requires frequency, not just membership).### Medium
+
+- [ ] [Container With Most Water](https://neetcode.io/problems/container-with-most-water)
+  Two pointers with area calculation optimization.
+- [ ] [Sort Characters By Frequency](https://leetcode.com/problems/sort-characters-by-frequency/)
+  HashMap frequency counting combined with sorting/heap.
+- [ ] [Subarray Product Less Than K](https://neetcode.io/problems/subarray-product-less-than-k/question)
+  Variable-size sliding window with product constraint.
+- [ ] [Fruit Into Baskets](https://leetcode.com/problems/fruit-into-baskets/)
+  Sliding window with at most K distinct elements constraint.
+- [ ] [Maximum Number of Vowels in a Substring of Given Length](https://leetcode.com/problems/maximum-number-of-vowels-in-a-substring-of-given-length/)
+  Fixed-size sliding window with character counting.
+- [ ] [Contiguous Array](https://leetcode.com/problems/contiguous-array/)
+  Prefix sum concept combined with HashMap for tracking.
+- [ ] [Subarray Sum Divisible by K](https://leetcode.com/problems/subarray-sum-divisible-by-k/)
+  Extends Subarray Sum Equals K pattern with modulo arithmetic.
+- [ ] [Find All Duplicates in an Array](https://leetcode.com/problems/find-all-duplicates-in-an-array/)
+  HashSet usage for finding all duplicates.
+- [ ] [4Sum](https://leetcode.com/problems/4sum/)
+  Extends 3Sum pattern, combines HashMap lookups, two pointers, and deduplication.
+- [ ] [Partition Labels](https://leetcode.com/problems/partition-labels/)
+  Combines HashMap tracking with sliding window concept.
+- [ ] [Find All Anagrams in a String](https://leetcode.com/problems/find-all-anagrams-in-a-string/)
+  Combines sliding window with HashMap frequency counting (similar to Permutation In String).---
 
 <details>
 <summary><strong>💡 Problem-Solving Hints</strong></summary>

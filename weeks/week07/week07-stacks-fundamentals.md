@@ -11,6 +11,7 @@ Understand how stacks model call execution, recursion, and nested logic in progr
 - [A Guide to Stack in Java — Baeldung](https://www.baeldung.com/java-stack) — Overview of `Stack` class, push/pop behavior, and pitfalls.
 - [Stack Data Structure (Java) — GeeksforGeeks](https://www.geeksforgeeks.org/stack-data-structure-introduction-program/) — Illustrates core operations with time complexities.
 - [Stack Class (Java SE 17) — Oracle Docs](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Stack.html) — Official Java implementation and use cases.
+- All operations other than search which is O(N) are O(1) complexity
 
 <details>
 <summary><strong>Video Solutions</strong></summary>
@@ -38,8 +39,8 @@ Find a production flow where recursion or nested logic could overflow the stack 
 
 ## 🧩 Deliverables
 
-- [ ] **Valid Parentheses** — [NeetCode](https://neetcode.io/problems/valid-parentheses)
-- [ ] **Min Stack** — [NeetCode](https://neetcode.io/problems/min-stack)
+- [ ] **Valid Parentheses** — [NeetCode](https://neetcode.io/problems/validate-parentheses/question)
+- [ ] **Min Stack** — [NeetCode](https://neetcode.io/problems/minimum-stack/question)
 - [ ] 100-word reflection on call stack depth and iterative alternatives.
 
 ---

@@ -19,6 +19,8 @@ Build a precise mental model of contiguous storage, indexing cost, and iteration
 
 - **Two Sum — NeetCode YouTube**  
   Video walkthrough: https://www.youtube.com/watch?v=KLlXCFG5TnA
+- **Best Time to Buy and Sell Stock — NeetCode YouTube**  
+  Video walkthrough: https://www.youtube.com/watch?v=1pkOgXD63yU
 
 </details>
 
@@ -41,6 +43,9 @@ Identify one production path (batch job, ETL, JSON mapping, report generation) t
 - [ ] **Two Sum**  
       NeetCode: https://neetcode.io/problems/two-integer-sum  
       LeetCode: https://leetcode.com/problems/two-sum/  
+- [ ] **Best Time to Buy and Sell Stock**  
+      NeetCode: https://neetcode.io/problems/best-time-to-buy-and-sell-stock  
+      LeetCode: https://leetcode.com/problems/best-time-to-buy-and-sell-stock/  
 - [ ] ~150-word reflection: *"Hidden complexity in one real system I've seen."*
 
 ---
@@ -55,7 +60,7 @@ Sharpen your array and complexity skills further with these curated problems:
   Find the contiguous subarray with the largest sum (tests understanding of prefix sums/Kadane's algorithm).
 - [Valid Anagram](https://neetcode.io/problems/is-anagram)  
   Determine if two strings are anagrams (tests frequency counting and array/hash map use).
-- [Best Time to Buy and Sell Stock](https://neetcode.io/problems/best-time-to-buy-and-sell-stock)  
+- [Best Time to Buy and Sell Stock](https://neetcode.io/problems/buy-and-sell-crypto/questionk)  
   Find maximum profit from one transaction (tests single-pass array traversal and min tracking).
 
 ### Medium
@@ -103,6 +108,11 @@ Sharpen your array and complexity skills further with these curated problems:
 - Hint 1: You need to find two numbers that sum to target. As you iterate, what have you already seen that you might need later?
 - Hint 2: If you've seen `nums[i]`, what value would you need to find to complete the pair? Can you store what you've seen for O(1) lookup?
 - Hint 3: Store each number and its index as you iterate. For each new number, check if `target - current_number` exists in your stored values.
+
+**Best Time to Buy and Sell Stock:**
+- Hint 1: You can only make one transaction. What's the minimum price you've seen so far, and what's the maximum profit you could make selling today?
+- Hint 2: Track the minimum price encountered so far. For each day, calculate profit if you sold today (price - min_so_far) and keep the maximum.
+- Hint 3: This is a single-pass problem. You don't need to look ahead or behind—just track the best buying opportunity (minimum) and best selling opportunity (current price - minimum).
 
 </details>
 

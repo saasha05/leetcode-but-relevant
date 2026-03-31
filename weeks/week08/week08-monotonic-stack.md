@@ -39,7 +39,7 @@ Design an alerting mechanism detecting a “rising trend” (CPU utilization, er
 ## 🧩 Deliverables
 
 - [ ] **Daily Temperatures** — [NeetCode](https://neetcode.io/problems/daily-temperatures)
-- [ ] **Next Greater Element I** — [NeetCode](https://neetcode.io/problems/next-greater-element)
+- [ ] **Next Greater Element I** — [NeetCode](https://leetcode.com/problems/next-greater-element-i/description/)
 - [ ] 100-word reflection: "Predictive analysis via monotonic stacks."
 
 ---
