@@ -40,6 +40,8 @@ Find a process where two nested loops exist (e.g., comparing timestamps). Refact
 
 - [ ] **3Sum** — [NeetCode](https://neetcode.io/problems/3sum)
 - [ ] **Container With Most Water** — [NeetCode](https://neetcode.io/problems/container-with-most-water)
+- [ ] **Sort Colors** — [LeetCode](https://leetcode.com/problems/sort-colors/description/)
+- [ ] **Valid Palindrome** — [NeetCode](https://neetcode.io/problems/is-palindrome/question)
 - [ ] 100-word note: "My two-pointer invariant."
 
 ---
@@ -78,6 +80,16 @@ Find a process where two nested loops exist (e.g., comparing timestamps). Refact
 - Hint 1: Water area = min(height[left], height[right]) × width. You need to maximize this. What happens if you move the pointer with smaller height?
 - Hint 2: Start with pointers at both ends. Always move the pointer with smaller height (moving larger one can't increase area). Calculate area at each step.
 - Hint 3: The key insight: if height[left] < height[right], moving right pointer left can only decrease area (width decreases, height can't increase). So move left pointer right.
+
+**Sort Colors:**
+- Hint 1: Sort an array of 0s, 1s, and 2s in-place without using a sort function. Can you do it in one pass with three pointers?
+- Hint 2: Dutch National Flag algorithm: use low, mid, and high pointers. Swap 0s to the left, 2s to the right, 1s stay in the middle.
+- Hint 3: Invariant: everything before low is 0, between low and mid is 1, after high is 2. Only advance mid when nums[mid] == 1 or after swapping a 0 — don't advance mid when swapping a 2 (it might be unexamined).
+
+**Valid Palindrome:**
+- Hint 1: Ignore non-alphanumeric characters. Start with one pointer at each end, move inward comparing characters.
+- Hint 2: Use left and right pointers. Skip non-alphanumeric characters by advancing the pointer. Compare lowercased characters when both point to valid chars.
+- Hint 3: This is the simplest two-pointer template — no sorting needed. It's worth mastering as the baseline before tackling sum-based variants.
 
 </details>
 

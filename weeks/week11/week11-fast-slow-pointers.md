@@ -40,6 +40,8 @@ Find one service where retrigger loops or cyclic dependencies could arise. Sugge
 
 - [ ] **Linked List Cycle** — [NeetCode](https://neetcode.io/problems/linked-list-cycle)
 - [ ] **Middle of the Linked List** — [NeetCode](https://neetcode.io/problems/middle-of-the-linked-list)
+- [ ] **Linked List Cycle II** — [LeetCode](https://leetcode.com/problems/linked-list-cycle-ii/description/)
+- [ ] **Find the Duplicate Number** — [NeetCode](https://neetcode.io/problems/find-duplicate-integer/question)
 - [ ] 100-word note: "Cycle detection in production."
 
 ---
@@ -78,6 +80,16 @@ Find one service where retrigger loops or cyclic dependencies could arise. Sugge
 - Hint 1: You need the middle node. If you traverse once to count, then traverse again, that's O(n) but two passes. Can you do it in one pass?
 - Hint 2: Use two pointers: slow moves one step, fast moves two steps. When fast reaches end, slow is at middle.
 - Hint 3: For even length, you might need to handle which middle (first or second). Check if fast.next is null (odd) or fast.next.next is null (even).
+
+**Linked List Cycle II:**
+- Hint 1: You need to find the node where the cycle begins, not just whether a cycle exists. What happens after fast and slow meet?
+- Hint 2: After meeting point is found, reset one pointer to head. Move both one step at a time — they will meet at the cycle entry node.
+- Hint 3: This works due to Floyd's math: the distance from head to cycle entry equals the distance from meeting point to cycle entry. Trust the math, verify with a small example.
+
+**Find the Duplicate Number:**
+- Hint 1: Values are 1..n in an array of length n+1. Treat values as pointers: index i points to nums[i]. Can you find a cycle?
+- Hint 2: This maps to Linked List Cycle II: index 0 is the "head", following nums[i] as next pointers forms a cycle at the duplicate value.
+- Hint 3: Apply Floyd's algorithm exactly as in Cycle II. The cycle entry = the duplicate number. No extra space needed, O(n) time.
 
 </details>
 

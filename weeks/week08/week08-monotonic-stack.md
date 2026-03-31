@@ -40,6 +40,8 @@ Design an alerting mechanism detecting a “rising trend” (CPU utilization, er
 
 - [ ] **Daily Temperatures** — [NeetCode](https://neetcode.io/problems/daily-temperatures)
 - [ ] **Next Greater Element I** — [NeetCode](https://leetcode.com/problems/next-greater-element-i/description/)
+- [ ] **Car Fleet** — [NeetCode](https://neetcode.io/problems/car-fleet/question)
+- [ ] **Largest Rectangle in Histogram** — [NeetCode](https://neetcode.io/problems/largest-rectangle-in-histogram/question)
 - [ ] 100-word reflection: "Predictive analysis via monotonic stacks."
 
 ---
@@ -78,6 +80,16 @@ Design an alerting mechanism detecting a “rising trend” (CPU utilization, er
 - Hint 1: You need to find next greater element in nums2 for each element in nums1. How can you preprocess nums2?
 - Hint 2: Build a HashMap: element → next greater element by processing nums2 with monotonic stack. Then lookup for nums1.
 - Hint 3: Process nums2 from left to right with decreasing stack. When you find greater element, map popped elements to current element.
+
+**Car Fleet:**
+- Hint 1: Cars closer to the target block faster cars behind them. What order should you process cars in?
+- Hint 2: Sort cars by position descending (closest to target first). Calculate time each car takes to reach target.
+- Hint 3: Use a stack of arrival times. If a car behind arrives before or at the same time as the car ahead, they form a fleet (pop/skip). Otherwise push a new fleet.
+
+**Largest Rectangle in Histogram:**
+- Hint 1: For each bar, the rectangle it can form extends left and right as long as bars are at least as tall. How do you find those boundaries efficiently?
+- Hint 2: Use an increasing monotonic stack of indices. When you find a shorter bar, pop and calculate the rectangle for each popped bar.
+- Hint 3: The width of a popped bar's rectangle is: current index − index of new stack top − 1. Use sentinel values (height 0 at start/end) to flush remaining bars.
 
 </details>
 

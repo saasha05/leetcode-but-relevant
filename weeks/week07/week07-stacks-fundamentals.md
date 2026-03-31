@@ -41,6 +41,8 @@ Find a production flow where recursion or nested logic could overflow the stack 
 
 - [ ] **Valid Parentheses** — [NeetCode](https://neetcode.io/problems/validate-parentheses/question)
 - [ ] **Min Stack** — [NeetCode](https://neetcode.io/problems/minimum-stack/question)
+- [ ] **Evaluate Reverse Polish Notation** — [NeetCode](https://neetcode.io/problems/evaluate-reverse-polish-notation/question)
+- [ ] **Asteroid Collision** — [LeetCode](https://leetcode.com/problems/asteroid-collision/description/)
 - [ ] 100-word reflection on call stack depth and iterative alternatives.
 
 ---
@@ -79,6 +81,16 @@ Find a production flow where recursion or nested logic could overflow the stack 
 - Hint 1: You need O(1) access to minimum element. How can you track the minimum as elements are pushed and popped?
 - Hint 2: Maintain a separate stack for minimums. When pushing, push min(current, minStack.top()) to min stack. When popping, pop from both.
 - Hint 3: Or store pairs (value, min_so_far) in main stack. Or use a single stack with clever tracking of minimums.
+
+**Evaluate Reverse Polish Notation:**
+- Hint 1: RPN means operators come after their operands. How do you hold operands until you see an operator?
+- Hint 2: Push numbers onto a stack. When you see an operator, pop two numbers, apply the operator, push the result.
+- Hint 3: Watch out for division truncating toward zero (use `(int)` cast or integer division). Result is the single remaining value on the stack.
+
+**Asteroid Collision:**
+- Hint 1: Asteroids move left or right and destroy each other on collision. When does a collision happen — and what survives?
+- Hint 2: Push right-moving asteroids onto the stack. When a left-moving asteroid arrives, it collides with the top if top is right-moving. Resolve by comparing sizes.
+- Hint 3: Keep resolving until the stack top is left-moving (no collision) or the incoming asteroid is destroyed. This is a "conflict resolution" stack pattern distinct from pure matching.
 
 </details>
 

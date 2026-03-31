@@ -39,7 +39,9 @@ Diagram your async processing system as a BFS graph — services as nodes, messa
 ## 🧩 Deliverables
 
 - [ ] **Implement Queue Using Stacks** — [NeetCode](https://neetcode.io/problems/implement-queue-using-stacks)
-- [ ] **Binary Tree Level Order Traversal** — [NeetCode](https://neetcode.io/problems/binary-tree-level-order-traversal)
+- [ ] **Binary Tree Level Order Traversal** — [NeetCode](https://neetcode.io/problems/level-order-traversal-of-binary-tree/question)
+- [ ] **Rotting Oranges** — [NeetCode](https://neetcode.io/problems/rotting-fruit/question)
+- [ ] **Number of Islands** — [NeetCode](https://neetcode.io/problems/number-of-islands/question)
 - [ ] Sketch your system's BFS model.
 
 ---
@@ -77,6 +79,16 @@ Diagram your async processing system as a BFS graph — services as nodes, messa
 - Hint 1: You need to process nodes level by level. What data structure processes elements in order?
 - Hint 2: Use a queue. Add root, then while queue is not empty: process all nodes at current level (queue size), add their children.
 - Hint 3: Track level size before processing. For each level, process exactly that many nodes, then add their children to queue for next level.
+
+**Rotting Oranges:**
+- Hint 1: Multiple rotten oranges spread simultaneously each minute. This is multi-source BFS — how do you start from multiple points at once?
+- Hint 2: Seed the queue with ALL initially rotten oranges at time 0. BFS naturally expands them in parallel level by level, where each level = 1 minute.
+- Hint 3: After BFS, scan the grid. If any fresh orange remains, return -1. Otherwise return the number of BFS levels elapsed (minutes).
+
+**Number of Islands:**
+- Hint 1: You need to count distinct connected groups of land (`'1'`). How do you mark all cells belonging to one island before moving to the next?
+- Hint 2: When you find an unvisited `'1'`, increment count and BFS/DFS to mark all connected `'1'`s as visited (set to `'0'` or use a visited set).
+- Hint 3: BFS explores all 4 neighbors. This is the same "flood fill" pattern as Rotting Oranges — recognizing the pattern matters more than the grid details.
 
 </details>
 
